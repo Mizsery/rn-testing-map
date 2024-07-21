@@ -16,12 +16,14 @@ web-build/
 *.key
 *.mobileprovision
 
+rn-map-tesing-firebase-adminsdk-7led3-6589634769.json
+google-services.json
 # Metro
 .metro-health-check*
 
 # debug
 npm-debug.*
-yarn-debug.*
+yarn-debug.* 
 yarn-error.*
 
 # macOS

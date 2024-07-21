@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "rn-testing-map",
-    "slug": "rn-testing-map",
+    "slug": "rn-map-2gis",
     "version": "1.0.0",
     "orientation": "portrait",
     "scheme": "rn-testing-map-scheme",
@@ -13,18 +13,32 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "entitlements": {
+        "aps-environment": "production"
+      }
     },
     "android": {
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.mizsery.rnmap2gis"
     },
     "web": {
       "favicon": "./assets/favicon.png",
       "bundler": "metro"
     },
-    "plugins": ["expo-router", "expo-font"]
+    "plugins": ["expo-router", "expo-font"],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "d3ac1ccf-9e6c-49db-ad0e-2f1edd54344b"
+      }
+    },
+    "owner": "mizsery"
   }
 }

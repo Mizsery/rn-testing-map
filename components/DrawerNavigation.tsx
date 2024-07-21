@@ -1,10 +1,10 @@
 import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
-import Profile from '../pages/Profile';
-import Settings from '../pages/Settings';
+import MapPage from './Map';
 
-import MapElement from './MapElement';
+import Profile from '@/pages/Profile';
+import Settings from '@/pages/Settings';
 
 const Drawer = createDrawerNavigator();
 
@@ -19,7 +19,7 @@ function DrawerNavigation() {
       }}
     >
       <Drawer.Screen name='Профиль' component={Profile} />
-      <Drawer.Screen name='Город' component={MapElement} />
+      <Drawer.Screen name='Город' component={MapPage} />
       <Drawer.Screen name='Настройки' component={Settings} />
     </Drawer.Navigator>
   );

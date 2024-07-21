@@ -4,12 +4,11 @@ import FlashMessage, { showMessage } from 'react-native-flash-message';
 import WebView, { WebViewNavigation } from 'react-native-webview';
 import { StatusBar } from 'expo-status-bar';
 
-import AddButton from './AddButton';
-import PickerList from './PickerList';
-
+import AddButton from '@/components/AddButton';
+import PickerList from '@/components/PickerList';
 import { MAP_URL } from '@/constant';
 
-function MapElement() {
+function MapPage() {
   const webRef = useRef<WebView>(null);
   const [mapUrl, setMapUrl] = useState(MAP_URL);
   const [address, setAddress] = useState<Address>({
@@ -84,4 +83,4 @@ function MapElement() {
   );
 }
 
-export default MapElement;
+export default MapPage;
